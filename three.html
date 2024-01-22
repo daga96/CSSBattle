@@ -1,0 +1,54 @@
+<div> 
+  <div class="treeCrown"></div>
+    <div class="branchGroup">
+    <div class="branch"></div>
+        <div class="trunk"></div>
+    <div class="branch"></div>
+      </div>
+  </div>
+
+<style>
+  *{
+    background: #024817;
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content:center;
+    padding:0px;
+
+  }
+  .treeCrown {
+    position: relative;
+    top: 42px;
+    width: 150px;
+    height: 150px;
+    background: #088540;
+    border-radius:100%;
+}
+  .branchGroup {
+    position: absolute;
+    top: 95px;
+    z-index: 1;
+    background: none;
+  }
+  
+  .trunk,
+  .branch {
+    width: 20px;
+    background: #83CF9D;
+    border-radius: 15px;
+  }
+  .branch{
+    margin-top: 16px;
+    height: 63px;
+}
+  .branch:first-of-type{
+   rotate:-45deg
+}
+  .branch:nth-of-type(3){
+    rotate:45deg
+}
+</style>
